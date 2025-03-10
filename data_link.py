@@ -1,7 +1,6 @@
 class DataLinkLayer:
-    def __init__(self):
-        # simulate a fixed mac address for this device
-        self.mac_address = "AA:BB:CC:DD:EE:FF"  
+    def __init__(self, mac_address):
+        self.mac_address = mac_address
 
     def encapsulate(self, data):
         # add mac address and frame structure
