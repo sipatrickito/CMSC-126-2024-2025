@@ -1,7 +1,6 @@
 class NetworkLayer:
-    def __init__(self):
-        # simulate a fixed ip address for this device
-        self.ip_address = "192.168.1.1"  
+    def __init__(self, ip_address):
+        self.ip_address = ip_address
 
     def encapsulate(self, data):
         # add ip address and packet structure
